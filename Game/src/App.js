@@ -29,7 +29,7 @@ class App extends Component {
     Axios.get("/api/user/logindetail")
       .then(res => {
         if (res.data.name) {
-          console.log(res.data.name);
+          //console.log(res.data.name);
           name = res.data.name;
           this.setState({ username: name });
         } else {
@@ -58,8 +58,6 @@ class App extends Component {
   }
 
   setDifficulty(level) {
-    // console.log(level);
-
     this.setState({ difficulty: parseInt(level) });
   }
 

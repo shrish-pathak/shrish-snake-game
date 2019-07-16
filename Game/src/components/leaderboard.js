@@ -13,7 +13,7 @@ class LeaderBoard extends Component {
   leaderBoard() {
     Axios.get("/api/score")
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         const list = [];
         res.data.map(player => {
           list.push(player);

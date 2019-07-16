@@ -2,14 +2,14 @@ const express = require("express");
 const router = express.Router();
 const passport = require("passport");
 
-//@route GET api/users/
+//@route GET api/user/
 //@desc test route
 //@access Public
 router.get("/", (req, res) => {
   res.json({ msg: "welcome to home page" });
 });
 
-//@route GET api/users/logindetali
+//@route GET api/user/logindetail
 //@desc provides username
 //@access Public
 router.get("/logindetail", (req, res) => {
@@ -22,8 +22,8 @@ router.get("/logindetail", (req, res) => {
   }
 });
 
-//@route GET api/users/logout
-//@desc logout users
+//@route GET api/user/logout
+//@desc logout user
 //@access public
 router.get("/logout", (req, res) => {
   req.logout();

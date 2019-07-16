@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require("../../models/User");
 
 //@route GET api/score
-//@desc get users score
+//@desc get user score
 //@access Public
 router.get("/", (req, res) => {
   User.find({}, { username: 1, score: 1, _id: 0 })
