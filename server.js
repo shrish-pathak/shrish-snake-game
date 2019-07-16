@@ -45,9 +45,9 @@ app.use(cors());
 app.use("/api/user", users);
 app.use("/api/score", scoremanager);
 
-app.get("/", (req, res) => {
-  res.send("<h1>Server Says Hiii.....</h1>");
-});
+// app.get("/", (req, res) => {
+//   res.send("<h1>Server Says Hiii.....</h1>");
+// });
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("Game/build"));
