@@ -4,11 +4,11 @@
   "description": "backend server for snake game",
   "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix Game",
+    "Game-install": "npm install --prefix Game",
     "backend": "nodemon server.js",
     "frontend": "npm start --prefix Game",
     "snakegame": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "heroku-post-build": "NPM_CONFIG_PRODUCTION=false npm install --prefix Game && npm run build --prefix Game"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Game && npm run build --prefix Game"
   },
   "author": "SHRISH PATHAK",
   "license": "ISC",
